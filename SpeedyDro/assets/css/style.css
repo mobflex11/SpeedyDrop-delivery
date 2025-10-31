@@ -1,0 +1,112 @@
+:root{
+  --primary-color: #716f72;
+  --secondary-color: #06402b;
+  --accent-color: #f2f2f2;
+
+}
+
+body{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+nav{
+  background-color: var(--accent-color);
+  color: var(--secondary-color);
+  padding: 15px 30px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+nav .logoName{
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+nav .logoName .logo i{
+  font-size: 30px;
+  color: var(--secondary-color);
+}
+
+nav .logoName .name h1{
+  margin: 0;
+  font-size: 24px;
+  color: var(--secondary-color);
+}
+
+nav .nav-links{
+  list-style: none;
+  display: flex;
+  gap: 20px;
+}
+nav .nav-links li a{
+  text-decoration: none;
+  color: var(--secondary-color);
+  font-weight: bold;
+}
+nav .nav-links li a:hover{
+  color: var(--primary-color);
+}
+
+
+section.hero{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 50px 20px;
+  background-color: var(--primary-color);
+}
+section.hero .heroContent{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  gap: 50px;
+  max-width: 1200px;
+  width: 100%;
+}
+section.hero .heroContent .text{
+  flex: 1;
+}
+section.hero .heroContent .text h1{
+  font-size: 48px;
+  color: var(--secondary-color);
+  margin-bottom: 20px;
+}
+section.hero .heroContent .text p{
+  font-size: 18px;
+  color: var(--accent-color);
+  margin-bottom: 30px;
+}
+section.hero .heroContent .text .btn{
+  padding: 15px 30px;
+  background-color: var(--secondary-color);
+  color: var(--accent-color);
+  text-decoration: none;
+  font-weight: bold;
+  border-radius: 5px;
+}
+section.hero .heroContent .text .btn:hover{
+  background-color: var(--primary-color);
+}
+section.hero .heroContent .image{
+  flex: 1;
+}
+section.hero .heroContent .image img{
+  width: auto;
+  height: 450px;
+  border-radius: 40px;
+}
+@media (max-width: 768px){
+  section.hero .heroContent{
+    flex-direction: column;
+    text-align: center;
+  }
+  section.hero .heroContent .image, section.hero .heroContent .text{
+    flex: unset;
+  }
+}
