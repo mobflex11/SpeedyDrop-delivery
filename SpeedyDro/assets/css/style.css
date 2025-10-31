@@ -1,6 +1,6 @@
 :root{
   --primary-color: #716f72;
-  --secondary-color: #06402b;
+  --secondary-color: rgba(0,0,0,0,45)
   --accent-color: #f2f2f2;
 
 }
